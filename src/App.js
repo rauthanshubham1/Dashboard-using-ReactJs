@@ -13,7 +13,7 @@ import Dashboard from "./scenes/dashboard"
 // import Pie from "./scenes/pie"
 // import FAQ from "./scenes/faq"
 // import Geography from "./scenes/geography"
-// import Calender from "./scenes/calender"
+// import Calendar from "./scenes/calendar"
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -23,6 +23,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <Sidebar />
           <main className="content">
             <Topbar />
 
@@ -37,7 +38,7 @@ function App() {
               {/* <Route exact path="/pie" element={<Pie />}></Route> */}
               {/* <Route exact path="/faq" element={<FAQ />}></Route> */}
               {/* <Route exact path="/geography" element={<Geography />}></Route> */}
-              {/* <Route exact path="/calender" element={<Calender />}></Route> */}
+              {/* <Route exact path="/calendar" element={<Calendar />}></Route> */}
             </Routes>
 
           </main>
